@@ -7,7 +7,7 @@ int main() {
     printf("Nhap so luong phan tu cua mang: ");
     scanf("%d", &n);
 
-    printf("Nhap cac phan tu cua mang:\n");
+    printf("Nhap cac phan tu cua mang:/n");
     for (int i = 0; i < n; i++) {
         printf("Phan tu thu %d: ", i + 1);
         scanf("%d", &arr[i]);
@@ -16,7 +16,6 @@ int main() {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                // Hoán ð?i 2 ph?n t?
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
@@ -28,7 +27,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
-    printf("\n");
+    printf("/n");
 
     return 0;
 }
